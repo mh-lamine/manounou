@@ -1,9 +1,8 @@
-import FAQ from "~/components/landing/FAQ";
 import type { Route } from "./+types/home";
-import Features from "~/components/landing/Features";
 import Hero from "~/components/landing/Hero";
-import Nav from "~/components/landing/Nav";
-import Pricing from "~/components/landing/Pricing";
+import Feature1 from "~/components/landing/Feature1";
+import Feature2 from "~/components/landing/Feature2";
+import Contact from "~/components/landing/Contact";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -15,11 +14,10 @@ export function meta({}: Route.MetaArgs) {
 export default function Home() {
   return (
     <>
-      <Nav />
       <Hero />
-      <Features />
-      <Pricing />
-      <FAQ />
+      <Feature1 />
+      <Feature2 />
+      <Contact />
     </>
   );
 }
